@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12DBD259-121A-42B8-9569-B39D1B8F8475}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KzL.Windows.Forms</RootNamespace>
+    <AssemblyName>KzL.Windows.Forms.Designer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\KzL.Windows.Forms\ButtonMenuForm.cs">
+      <Link>ButtonMenuForm.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\ButtonMenuForm.designer.cs">
+      <Link>ButtonMenuForm.designer.cs</Link>
+      <DependentUpon>ButtonMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\ExtensionMethods.cs">
+      <Link>ExtensionMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\KzPropertiesGridDialog.cs">
+      <Link>KzPropertiesGridDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\KzPropertiesGridDialog.designer.cs">
+      <Link>KzPropertiesGridDialog.designer.cs</Link>
+      <DependentUpon>KzPropertiesGridDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\KzPropertiesGridEditor.cs">
+      <Link>KzPropertiesGridEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\LayoutConfirmDeleteForm.cs">
+      <Link>LayoutConfirmDeleteForm.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\LayoutConfirmDeleteForm.Designer.cs">
+      <Link>LayoutConfirmDeleteForm.Designer.cs</Link>
+      <DependentUpon>LayoutConfirmDeleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\LayoutSaveAsForm.cs">
+      <Link>LayoutSaveAsForm.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\LayoutSaveAsForm.Designer.cs">
+      <Link>LayoutSaveAsForm.Designer.cs</Link>
+      <DependentUpon>LayoutSaveAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\LinqExtensions.cs">
+      <Link>LinqExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\LogControl.cs">
+      <Link>LogControl.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\LogControl.Designer.cs">
+      <Link>LogControl.Designer.cs</Link>
+      <DependentUpon>LogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\NewTabLayoutForm.cs">
+      <Link>NewTabLayoutForm.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\NewTabLayoutForm.Designer.cs">
+      <Link>NewTabLayoutForm.Designer.cs</Link>
+      <DependentUpon>NewTabLayoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\OkCancelControl.cs">
+      <Link>OkCancelControl.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\OkCancelControl.Designer.cs">
+      <Link>OkCancelControl.Designer.cs</Link>
+      <DependentUpon>OkCancelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\UiLayoutManager.Activate.cs">
+      <Link>UiLayoutManager.Activate.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\UiLayoutManager.cs">
+      <Link>UiLayoutManager.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\UiLayoutTabControl.cs">
+      <Link>UiLayoutTabControl.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\Utility.cs">
+      <Link>Utility.cs</Link>
+    </Compile>
+    <Compile Include="..\KzL.Windows.Forms\XmlUiLayout.cs">
+      <Link>XmlUiLayout.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\KzL.Windows.Forms\ButtonMenuForm.resx">
+      <Link>ButtonMenuForm.resx</Link>
+      <DependentUpon>ButtonMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\KzL.Windows.Forms\KzPropertiesGridDialog.resx">
+      <Link>KzPropertiesGridDialog.resx</Link>
+      <DependentUpon>KzPropertiesGridDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\KzL.Windows.Forms\LayoutConfirmDeleteForm.resx">
+      <Link>LayoutConfirmDeleteForm.resx</Link>
+      <DependentUpon>LayoutConfirmDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\KzL.Windows.Forms\LayoutSaveAsForm.resx">
+      <Link>LayoutSaveAsForm.resx</Link>
+      <DependentUpon>LayoutSaveAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\KzL.Windows.Forms\LogControl.resx">
+      <Link>LogControl.resx</Link>
+      <DependentUpon>LogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\KzL.Windows.Forms\NewTabLayoutForm.resx">
+      <Link>NewTabLayoutForm.resx</Link>
+      <DependentUpon>NewTabLayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\KzL.Windows.Forms\OkCancelControl.resx">
+      <Link>OkCancelControl.resx</Link>
+      <DependentUpon>OkCancelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

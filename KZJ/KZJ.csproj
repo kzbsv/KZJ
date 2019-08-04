@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon />
+    <StartupObject />
+    <Version>0.0.1</Version>
+    <Authors>TonesNotes</Authors>
+    <Company>kzbsv.org</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="ButtonMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ButtonMenuForm.designer.cs">
+      <DependentUpon>ButtonMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="KzPropertiesGridDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KzPropertiesGridDialog.designer.cs">
+      <DependentUpon>KzPropertiesGridDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Update="LayoutConfirmDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LayoutSaveAsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LayoutSaveAsForm.Designer.cs">
+      <DependentUpon>LayoutSaveAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="LogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="NewTabLayoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OkCancelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="OkCancelControl.Designer.cs">
+      <DependentUpon>OkCancelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UiLayoutTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="LayoutConfirmDeleteForm.resx">
+      <DependentUpon>LayoutConfirmDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="NewTabLayoutForm.resx">
+      <DependentUpon>NewTabLayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
