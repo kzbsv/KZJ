@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.ComponentModel.DataAnnotations;
 
-namespace KzL.Windows.Forms {
+namespace KZJ {
     public static class ExtensionMethods {
 
         public static IEnumerable<TreeNode> AsEnumerable(this TreeNodeCollection nodes) {

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using System.Drawing;
 //using KzL.Utility1;
 
-namespace KzL.Windows.Forms {
+namespace KZJ {
 
     [Serializable]
     [XmlType("UiLayoutRoot")]

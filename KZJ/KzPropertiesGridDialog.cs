@@ -8,7 +8,7 @@ using System.Windows.Forms.Design;
 
 //using KzL.Utility1;
 
-namespace KzL.Windows.Forms
+namespace KZJ
 {
     public partial class KzPropertiesGridDialog : Form {
 

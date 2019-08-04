@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
 
-namespace KzL.Windows.Forms {
+namespace KZJ {
     public partial class LogControl : UserControl {
         public LogControl() {
             InitializeComponent();

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{12DBD259-121A-42B8-9569-B39D1B8F8475}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>KzL.Windows.Forms</RootNamespace>
-    <AssemblyName>KzL.Windows.Forms.Designer</AssemblyName>
+    <RootNamespace>KZJ</RootNamespace>
+    <AssemblyName>KZJ.Designer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,105 +50,113 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\KzL.Windows.Forms\ButtonMenuForm.cs">
+    <Compile Include="..\KZJ\ButtonMenuForm.cs">
       <Link>ButtonMenuForm.cs</Link>
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\ButtonMenuForm.designer.cs">
+    <Compile Include="..\KZJ\ButtonMenuForm.designer.cs">
       <Link>ButtonMenuForm.designer.cs</Link>
       <DependentUpon>ButtonMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\ExtensionMethods.cs">
+    <Compile Include="..\KZJ\ExtensionMethods.cs">
       <Link>ExtensionMethods.cs</Link>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\KzPropertiesGridDialog.cs">
+    <Compile Include="..\KZJ\KzPropertiesGridDialog.cs">
       <Link>KzPropertiesGridDialog.cs</Link>
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\KzPropertiesGridDialog.designer.cs">
+    <Compile Include="..\KZJ\KzPropertiesGridDialog.designer.cs">
       <Link>KzPropertiesGridDialog.designer.cs</Link>
       <DependentUpon>KzPropertiesGridDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\KzPropertiesGridEditor.cs">
+    <Compile Include="..\KZJ\KzPropertiesGridEditor.cs">
       <Link>KzPropertiesGridEditor.cs</Link>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\LayoutConfirmDeleteForm.cs">
+    <Compile Include="..\KZJ\LayoutConfirmDeleteForm.cs">
       <Link>LayoutConfirmDeleteForm.cs</Link>
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\LayoutConfirmDeleteForm.Designer.cs">
+    <Compile Include="..\KZJ\LayoutConfirmDeleteForm.Designer.cs">
       <Link>LayoutConfirmDeleteForm.Designer.cs</Link>
       <DependentUpon>LayoutConfirmDeleteForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\LayoutSaveAsForm.cs">
+    <Compile Include="..\KZJ\LayoutSaveAsForm.cs">
       <Link>LayoutSaveAsForm.cs</Link>
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\LayoutSaveAsForm.Designer.cs">
+    <Compile Include="..\KZJ\LayoutSaveAsForm.Designer.cs">
       <Link>LayoutSaveAsForm.Designer.cs</Link>
       <DependentUpon>LayoutSaveAsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\LinqExtensions.cs">
+    <Compile Include="..\KZJ\LinqExtensions.cs">
       <Link>LinqExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\LogControl.cs">
+    <Compile Include="..\KZJ\LogControl.cs">
       <Link>LogControl.cs</Link>
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\LogControl.Designer.cs">
+    <Compile Include="..\KZJ\LogControl.Designer.cs">
       <Link>LogControl.Designer.cs</Link>
       <DependentUpon>LogControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\NewTabLayoutForm.cs">
+    <Compile Include="..\KZJ\NewTabLayoutForm.cs">
       <Link>NewTabLayoutForm.cs</Link>
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\NewTabLayoutForm.Designer.cs">
+    <Compile Include="..\KZJ\NewTabLayoutForm.Designer.cs">
       <Link>NewTabLayoutForm.Designer.cs</Link>
       <DependentUpon>NewTabLayoutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\OkCancelControl.cs">
+    <Compile Include="..\KZJ\OkCancelControl.cs">
       <Link>OkCancelControl.cs</Link>
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\OkCancelControl.Designer.cs">
+    <Compile Include="..\KZJ\OkCancelControl.Designer.cs">
       <Link>OkCancelControl.Designer.cs</Link>
       <DependentUpon>OkCancelControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\UiLayoutManager.Activate.cs">
+    <Compile Include="..\KZJ\UiLayoutManager.Activate.cs">
       <Link>UiLayoutManager.Activate.cs</Link>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\UiLayoutManager.cs">
+    <Compile Include="..\KZJ\UiLayoutManager.cs">
       <Link>UiLayoutManager.cs</Link>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\UiLayoutTabControl.cs">
+    <Compile Include="..\KZJ\UiLayoutTabControl.cs">
       <Link>UiLayoutTabControl.cs</Link>
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\Utility.cs">
+    <Compile Include="..\KZJ\Utility.cs">
       <Link>Utility.cs</Link>
     </Compile>
-    <Compile Include="..\KzL.Windows.Forms\XmlUiLayout.cs">
+    <Compile Include="..\KZJ\XmlUiLayout.cs">
       <Link>XmlUiLayout.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="..\KzL.Windows.Forms\ButtonMenuForm.resx">
+    <EmbeddedResource Include="..\KZJ\ButtonMenuForm.resx">
       <Link>ButtonMenuForm.resx</Link>
       <DependentUpon>ButtonMenuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\KzL.Windows.Forms\KzPropertiesGridDialog.resx">
+    <EmbeddedResource Include="..\KZJ\KzPropertiesGridDialog.resx">
       <Link>KzPropertiesGridDialog.resx</Link>
       <DependentUpon>KzPropertiesGridDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\KzL.Windows.Forms\LayoutConfirmDeleteForm.resx">
+    <EmbeddedResource Include="..\KZJ\LayoutConfirmDeleteForm.resx">
       <Link>LayoutConfirmDeleteForm.resx</Link>
       <DependentUpon>LayoutConfirmDeleteForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\KzL.Windows.Forms\LayoutSaveAsForm.resx">
+    <EmbeddedResource Include="..\KZJ\LayoutSaveAsForm.resx">
       <Link>LayoutSaveAsForm.resx</Link>
       <DependentUpon>LayoutSaveAsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\KzL.Windows.Forms\LogControl.resx">
+    <EmbeddedResource Include="..\KZJ\LogControl.resx">
       <Link>LogControl.resx</Link>
       <DependentUpon>LogControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\KzL.Windows.Forms\NewTabLayoutForm.resx">
+    <EmbeddedResource Include="..\KZJ\NewTabLayoutForm.resx">
       <Link>NewTabLayoutForm.resx</Link>
       <DependentUpon>NewTabLayoutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\KzL.Windows.Forms\OkCancelControl.resx">
+    <EmbeddedResource Include="..\KZJ\OkCancelControl.resx">
       <Link>OkCancelControl.resx</Link>
       <DependentUpon>OkCancelControl.cs</DependentUpon>
     </EmbeddedResource>

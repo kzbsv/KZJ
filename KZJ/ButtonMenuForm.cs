@@ -8,9 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using KzL.Windows.Forms;
-
-namespace KzL.Windows.Forms {
+namespace KZJ {
     public partial class ButtonMenuForm : Form {
 
         public ContextMenuStrip ButtonMenu { get { return _ButtonMenu; } }

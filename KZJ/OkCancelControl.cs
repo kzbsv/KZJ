@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KzL.Windows.Forms {
+namespace KZJ {
     public partial class OkCancelControl : UserControl {
 
         public event EventHandler<ValueEventArgs<DialogResult>> DialogResult;

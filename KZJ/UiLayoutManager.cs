@@ -8,10 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//using KzL.Utility1;
-using KzL.Windows.Forms;
-
-namespace KzL.Windows.Forms {
+namespace KZJ {
     public partial class UiLayoutManager {
 
         private Form _MainForm;
@@ -453,7 +450,7 @@ namespace KzL.Windows.Forms {
         public class LayoutTabPage : TabPage {
         }
 
-        internal void addLayoutTabToolStripMenuItem(KzL.Windows.Forms.ButtonMenuForm.MenuClickContext mcc, string tabName) {
+        internal void addLayoutTabToolStripMenuItem(KZJ.ButtonMenuForm.MenuClickContext mcc, string tabName) {
             if (mcc.Tabs == null) return;
             var tp = CreateNewLayoutTabPage(tabName, mcc.Button, mcc.Tabs);
             mcc.Tabs.Controls.Add(tp);

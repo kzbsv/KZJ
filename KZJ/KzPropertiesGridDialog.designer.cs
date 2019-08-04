@@ -1,4 +1,4 @@
-namespace KzL.Windows.Forms {
+namespace KZJ {
     partial class KzPropertiesGridDialog {
         /// <summary>
         /// Required designer variable.

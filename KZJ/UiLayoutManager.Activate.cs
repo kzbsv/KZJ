@@ -8,10 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//using KzL.Utility1;
-using KzL.Windows.Forms;
-
-namespace KzL.Windows.Forms {
+namespace KZJ {
     partial class UiLayoutManager {
 
         public void ActivateLayout(string name, bool verify = true) {

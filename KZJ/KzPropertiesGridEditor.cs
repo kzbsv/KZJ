@@ -5,7 +5,7 @@ using System.Reflection;
 
 //using KzL.Utility1;
 
-namespace KzL.Windows.Forms
+namespace KZJ
 {
     public class KzPropertiesGridEditor : System.Drawing.Design.UITypeEditor {
         public override object EditValue(ITypeDescriptorContext context, IServiceProvider provider, object value) {

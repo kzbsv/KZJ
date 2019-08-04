@@ -1,4 +1,4 @@
-﻿namespace KzL.Windows.Forms {
+﻿namespace KZJ {
     partial class LayoutConfirmDeleteForm {
         /// <summary>
         /// Required designer variable.

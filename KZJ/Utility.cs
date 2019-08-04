@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KzL.Windows.Forms
+namespace KZJ
 {
     /// <summary>
     /// Class must define CloneBySerialization() method.

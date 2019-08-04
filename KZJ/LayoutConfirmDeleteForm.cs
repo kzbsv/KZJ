@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KzL.Windows.Forms {
+namespace KZJ {
     public partial class LayoutConfirmDeleteForm : Form {
 
         public string LayoutName { get { return labelLayoutName.Text; } set { labelLayoutName.Text = value; } }

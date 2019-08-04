@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KzL.Windows.Forms.Properties {
+namespace KZJ.Properties {
     using System;
     
     

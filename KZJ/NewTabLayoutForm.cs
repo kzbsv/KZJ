@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KzL.Windows.Forms {
+namespace KZJ {
     public partial class NewTabLayoutForm : Form {
 
         public string NewTabName { get { return textBox1.Text; } }

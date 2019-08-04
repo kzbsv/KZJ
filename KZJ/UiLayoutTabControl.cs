@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KzL.Windows.Forms {
+namespace KZJ {
     public class UiLayoutTabControl : TabControl {
         bool tabsVisible = true;
 
