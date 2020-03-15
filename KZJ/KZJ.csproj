@@ -21,6 +21,9 @@
     <Compile Update="ButtonMenuForm.designer.cs">
       <DependentUpon>ButtonMenuForm.cs</DependentUpon>
     </Compile>
+    <Compile Update="DynamicDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="KzPropertiesGridDialog.cs">
       <SubType>Form</SubType>
     </Compile>
