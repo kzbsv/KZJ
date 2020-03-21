@@ -21,6 +21,14 @@ namespace KZJ {
             for (int i = 0; i < rows.Count; i++) yield return rows[i];
         }
 
+        public static IEnumerable<DataGridViewRow> AsEnumerable(this DataGridViewSelectedRowCollection rows) {
+            for (int i = 0; i < rows.Count; i++) yield return rows[i];
+        }
+
+        public static IEnumerable<DataGridViewCell> AsEnumerable(this DataGridViewSelectedCellCollection cells) {
+            for (int i = 0; i < cells.Count; i++) yield return cells[i];
+        }
+
         public static IEnumerable<TabPage> AsEnumerable(this TabControl.TabPageCollection pages) {
             for (int i = 0; i < pages.Count; i++) yield return pages[i];
         }

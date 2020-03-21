@@ -27,6 +27,49 @@ namespace KZJ {
 
         List<Action> results = new List<Action>();
 
+        public DynamicDialog(string title = null) {
+            this.flowLayoutPanelMain = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanelMain.SuspendLayout();
+            this.SuspendLayout();
+
+            // 
+            // flowLayoutPanelMain
+            // 
+            this.flowLayoutPanelMain.AutoSize = true;
+            this.flowLayoutPanelMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanelMain.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanelMain.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanelMain.Name = "flowLayoutPanelMain";
+            this.flowLayoutPanelMain.Size = new System.Drawing.Size(309, 93);
+            this.flowLayoutPanelMain.TabIndex = 0;
+
+            // 
+            // DynamicDialog
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(876, 489);
+            this.ControlBox = false;
+            this.Controls.Add(this.flowLayoutPanelMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "DynamicDialog";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.Text = title;
+            this.TopMost = true;
+            this.StartPosition = FormStartPosition.CenterParent;
+
+            this.flowLayoutPanelMain.ResumeLayout(false);
+            this.flowLayoutPanelMain.PerformLayout();
+            this.ResumeLayout(false);
+
+            this.PerformLayout();
+        }
+
         /// <summary>
         /// Use \r\n to insert a line break in labelText.
         /// </summary>
@@ -150,48 +193,5 @@ namespace KZJ {
             return this;
         }
 
-
-        public DynamicDialog(string title = null) {
-            this.flowLayoutPanelMain = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanelMain.SuspendLayout();
-            this.SuspendLayout();
-
-            // 
-            // flowLayoutPanelMain
-            // 
-            this.flowLayoutPanelMain.AutoSize = true;
-            this.flowLayoutPanelMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanelMain.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanelMain.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanelMain.Name = "flowLayoutPanelMain";
-            this.flowLayoutPanelMain.Size = new System.Drawing.Size(309, 93);
-            this.flowLayoutPanelMain.TabIndex = 0;
-
-            // 
-            // DynamicDialog
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(876, 489);
-            this.ControlBox = false;
-            this.Controls.Add(this.flowLayoutPanelMain);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "DynamicDialog";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.Text = title;
-            this.TopMost = true;
-            this.StartPosition = FormStartPosition.CenterParent;
-
-            this.flowLayoutPanelMain.ResumeLayout(false);
-            this.flowLayoutPanelMain.PerformLayout();
-            this.ResumeLayout(false);
-
-            this.PerformLayout();
-        }
     }
 }

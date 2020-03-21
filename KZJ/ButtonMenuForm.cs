@@ -104,7 +104,8 @@ namespace KZJ {
                 .SelectMany(acc => (acc as UiLayoutTabControl).TabPages.AsEnumerable()));
             items.AddRange(
                 _M.AllTabs.Where(tp => !inUse.Contains(tp)).Select(tp => {
-                    var i = new ToolStripMenuItem { Text = tp.Name.Substring(3), Checked = false, Tag = tp };
+                    var menuText = (tp.Name?.Length ?? 0) > 3 ? tp.Name.Substring(3) : tp.Text;
+                    var i = new ToolStripMenuItem { Text = menuText, Checked = false, Tag = tp };
                     i.Click += tabMenuItem_Click;
                     return i as ToolStripItem;
                 }).OrderBy(tsi => tsi.Text).ToArray());
