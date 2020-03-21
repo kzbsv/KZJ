@@ -74,9 +74,9 @@ namespace KZJ {
             _Grid.DataSource = _Data;
         }
 
-        public void SetData(IEnumerable<T> data) => SetData(data.ToArray());
+        public void SetData(IEnumerable<T> data, string description = null) => SetData(data.ToArray(), description);
 
-        public void SetData(IList<T> data) {
+        public void SetData(IList<T> data, string description = null) {
             //_Grid.CurrentCellChanged -= _Grid_CurrentCellChanged;
             //_Grid.SelectionChanged -= _Grid_SelectionChanged;
             try {
@@ -87,6 +87,7 @@ namespace KZJ {
                 _Grid.Columns[DataColumn].Visible = false;
                 _Grid.ApplyDisplayFormat(_Data);
                 _Grid.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+                _Label.Text = description;
             } finally {
                 //_Grid.SelectionChanged += _Grid_SelectionChanged;
                 //_Grid.CurrentCellChanged += _Grid_CurrentCellChanged;
