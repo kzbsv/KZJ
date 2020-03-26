@@ -121,6 +121,11 @@ namespace KZJ {
             return mi;
         }
 
+        public IEnumerable<(T, string)> GetSelectedDataAndProperty() {
+            var indices = _Grid.SelectedCells.AsEnumerable().Select(c => ((int)(c.OwningRow.Cells[IndexColumn].Value), c.OwningColumn.DataPropertyName)).ToArray();
+            return indices.Where(i => i.Item1 > 0 && i.Item1 <= _Data.Count).Select(i => (_Data[i.Item1 - 1], i.DataPropertyName));
+        }
+
         public IEnumerable<T> GetSelectedData() {
             var indices = _Grid.SelectedCells.AsEnumerable().Select(c => (int)(c.OwningRow.Cells[IndexColumn].Value)).Distinct().ToArray();
             if (indices.Length == 0)
