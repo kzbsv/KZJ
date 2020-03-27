@@ -1,4 +1,8 @@
-﻿using System;
+﻿#region Copyright
+// Copyright (c) 2020 TonesNotes
+// Distributed under the Open BSV software license, see the accompanying file LICENSE.
+#endregion
+using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Reflection;
