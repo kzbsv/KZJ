@@ -126,15 +126,13 @@ namespace KZJ {
         }
 
         public IEnumerable<(T data, string property)> GetSelectedDataAndProperty() {
-            var indices = _Grid.SelectedCells.AsEnumerable().Select(c => ((int)(c.OwningRow.Cells[IndexColumn].Value), c.OwningColumn.DataPropertyName)).ToArray();
-            return indices.Where(i => i.Item1 > 0 && i.Item1 <= _Data.Count).Select(i => (_Data[i.Item1 - 1], i.DataPropertyName));
+            var indices = _Grid.SelectedCells.AsEnumerable().Select(c => (c.OwningRow.DataBoundItem as T, c.OwningColumn.DataPropertyName)).ToArray();
+            return indices;
         }
 
         public IEnumerable<T> GetSelectedData() {
-            var indices = _Grid.SelectedCells.AsEnumerable().Select(c => (int)(c.OwningRow.Cells[IndexColumn].Value)).Distinct().ToArray();
-            if (indices.Length == 0)
-                indices = _Grid.SelectedRows.AsEnumerable().Select(r => (int)(r.Cells[IndexColumn].Value)).ToArray();
-            return indices.Where(i => i > 0 && i <= _Data.Count).Select(i => _Data[i - 1]);
+            var indices = _Grid.SelectedCells.AsEnumerable().Select(c => c.OwningRow.DataBoundItem as T).ToArray();
+            return indices;
         }
 
         int NextRowIndex(int index) {
