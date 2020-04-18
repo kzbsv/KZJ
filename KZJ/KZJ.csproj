@@ -15,45 +15,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="ButtonMenuForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="ButtonMenuForm.cs" />
     <Compile Update="ButtonMenuForm.designer.cs">
       <DependentUpon>ButtonMenuForm.cs</DependentUpon>
     </Compile>
-    <Compile Update="DynamicDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="KzPropertiesGridDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="DynamicDialog.cs" />
+    <Compile Update="KzPropertiesGridDialog.cs" />
     <Compile Update="KzPropertiesGridDialog.designer.cs">
       <DependentUpon>KzPropertiesGridDialog.cs</DependentUpon>
     </Compile>
-    <Compile Update="LayoutConfirmDeleteForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="LayoutSaveAsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="LayoutConfirmDeleteForm.cs" />
+    <Compile Update="LayoutSaveAsForm.cs" />
     <Compile Update="LayoutSaveAsForm.Designer.cs">
       <DependentUpon>LayoutSaveAsForm.cs</DependentUpon>
     </Compile>
-    <Compile Update="LogControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="NewTabLayoutForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="OkCancelControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="LogControl.cs" />
+    <Compile Update="NewTabLayoutForm.cs" />
+    <Compile Update="OkCancelControl.cs" />
     <Compile Update="OkCancelControl.Designer.cs">
       <DependentUpon>OkCancelControl.cs</DependentUpon>
     </Compile>
-    <Compile Update="UiLayoutTabControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Update="UiLayoutTabControl.cs" />
   </ItemGroup>
 
   <ItemGroup>
