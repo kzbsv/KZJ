@@ -10,6 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace KZJ {
+
     public class DynamicGridControl<T> : UserControl where T : class {
 
         protected SortableBindingList<T> _Data = new SortableBindingList<T>();
