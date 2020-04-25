@@ -99,7 +99,12 @@ namespace KZJ {
             return this;
         }
 
-        public DynamicDialog AddTextBox(string labelText, int width = 200, Action<string> result = null) {
+        public DynamicDialog AddTextBox(
+            string labelText,
+            int width = 200,
+            Action<string> result = null,
+            bool readOnly = false,
+            string initialText = null) {
 
             itemCount++;
 
@@ -121,6 +126,8 @@ namespace KZJ {
                 Name = $"textBox1{itemCount}",
                 Size = new System.Drawing.Size(width, 20),
                 TabIndex = itemCount,
+                ReadOnly = readOnly,
+                Text = initialText
             };
 
             if (result != null) results.Add(() => result(textBox.Text));
