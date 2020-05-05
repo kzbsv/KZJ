@@ -9,9 +9,17 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.ComponentModel.DataAnnotations;
+using System.IO;
 
 namespace KZJ {
     public static class ExtensionMethods {
+
+        static readonly char[] invalidFilenameChars = Path.GetInvalidPathChars();
+
+        public static string StripInvalidFilenameChars(this string filename) {
+            return new string(filename.Where(ch => !invalidFilenameChars.Contains(ch)).ToArray());
+        }
+
 
         public static IEnumerable<TreeNode> AsEnumerable(this TreeNodeCollection nodes) {
             for (int i = 0; i < nodes.Count; i++) {
