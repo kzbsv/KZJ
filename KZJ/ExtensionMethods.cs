@@ -10,6 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
+using System.Drawing;
 
 namespace KZJ {
     public static class ExtensionMethods {
@@ -59,14 +60,25 @@ namespace KZJ {
         }
 
         public static void ApplyDisplayFormat<T>(this DataGridView grid, IList<T> data) where T: class {
+            var monoFont = new Font(new FontFamily("Consolas"), grid.Font.Size);
             var t = typeof(T);
             foreach (var p in t.GetProperties()) {
+                var col = grid.Columns.AsEnumerable().FirstOrDefault(fod => fod.Name == p.Name);
+
                 var df = p.GetCustomAttributes(false).FirstOrDefault(fod => fod is DisplayFormatAttribute) as DisplayFormatAttribute;
                 if (df != null) {
                     if (!string.IsNullOrWhiteSpace(df.DataFormatString)) {
-                        var col = grid.Columns.AsEnumerable().FirstOrDefault(fod => fod.Name == p.Name);
                         col.DefaultCellStyle.Format = df.DataFormatString;
                     }
+                }
+                var gcf = p.GetCustomAttributes(false).FirstOrDefault(fod => fod is GridColumnFormatAttribute) as GridColumnFormatAttribute;
+                if (gcf != null) {
+                    col.Visible = !gcf.Hide;
+                    if (gcf.Monospaced)
+                        col.DefaultCellStyle.Font = monoFont;
+                    col.DefaultCellStyle.Alignment = gcf.AlignLeft ? DataGridViewContentAlignment.MiddleLeft : DataGridViewContentAlignment.MiddleRight;
+                } else {
+                    col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                 }
             }
         }
@@ -78,5 +90,12 @@ namespace KZJ {
         public static IEnumerable<DataGridViewCell> AsEnumerable(this DataGridViewCellCollection gridCells) {
             for (var i = 0; i < gridCells.Count; i++) yield return gridCells[i];
         }
+    }
+
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple =false)]
+    public class GridColumnFormatAttribute : Attribute {
+        public bool Monospaced { get; set; }
+        public bool AlignLeft { get; set; }
+        public bool Hide { get; set; }
     }
 }

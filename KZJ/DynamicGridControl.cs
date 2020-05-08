@@ -28,9 +28,6 @@ namespace KZJ {
         public ContextMenuStrip GridMenu => _GridMenu;
 
         protected string IndexColumn { get; set; } = "Index";
-        protected string DataColumn { get; set; } = string.Empty;
-        protected string[] MonospacedColumns { get; set; } = new string[0];
-        protected string[] LeftAlignedColumns { get; set; } = new string[0];
 
         public DynamicGridControl() {
             InitializeControls();
@@ -87,30 +84,13 @@ namespace KZJ {
             try {
                 _Data = new SortableBindingList<T>(data.ToList());
                 _Grid.DataSource = _Data;
-                SetColStyles();
                 //foreach (var row in _Grid.Rows.AsEnumerable()) SetRowColors(row);
-                _Grid.Columns[DataColumn].Visible = false;
                 _Grid.ApplyDisplayFormat(_Data);
                 _Grid.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
                 _Label.Text = description;
             } finally {
                 //_Grid.SelectionChanged += _Grid_SelectionChanged;
                 //_Grid.CurrentCellChanged += _Grid_CurrentCellChanged;
-            }
-        }
-
-        void SetColStyles() {
-            foreach (var col in _Grid.Columns.AsEnumerable()) {
-                if (MonospacedColumns.Contains(col.Name)) {
-                    var s = new DataGridViewCellStyle();
-                    s.Font = new Font(new FontFamily("Consolas"), _Grid.Font.Size);
-                    col.DefaultCellStyle = s;
-                }
-                if (LeftAlignedColumns.Contains(col.Name)) {
-                    col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
-                } else {
-                    col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-                }
             }
         }
 
